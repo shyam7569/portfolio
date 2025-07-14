@@ -1,0 +1,107 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gunduboina Shanmukha Syam | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+</head>
+<body class="bg-white text-gray-900 font-sans dark:bg-gray-900 dark:text-gray-100">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 shadow-md bg-white dark:bg-gray-800">
+    <h1 class="text-xl font-bold">Shanmukha Syam</h1>
+    <nav class="space-x-4">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#skills" class="hover:underline">Skills</a>
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+      <button id="theme-toggle" class="ml-4 text-sm text-blue-500 underline">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-16 bg-gray-100 dark:bg-gray-800">
+    <img src="https://via.placeholder.com/120" alt="avatar" class="mx-auto mb-4 rounded-full w-32 h-32">
+    <h2 class="text-4xl font-bold mb-2">Hi, I'm Gunduboina Shanmukha Syam 👋</h2>
+    <p class="text-lg mb-4">Aspiring Full-Stack Developer | Tech Explorer</p>
+    <div class="space-x-4">
+      <a href="mailto:shanmukhshyam7569@gmail.com" class="text-blue-500 underline">Email</a>
+      <a href="https://linkedin.com/in/shanmukh-s-768b691b2" class="text-blue-500 underline">LinkedIn</a>
+      <a href="resume.pdf" download class="text-green-500 underline">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="px-6 py-12">
+    <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+    <p class="mb-2">A Computer Science Engineering student passionate about Full-Stack Development, AI/ML, and continuous learning.</p>
+    <p class="mb-2">Career Goal: Utilize my skills to contribute meaningfully to an organization while staying up-to-date with emerging tech.</p>
+    <p class="text-gray-600 dark:text-gray-300">B.Tech @ LBRCE (CGPA: 7.35)</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-100 dark:bg-gray-800 px-6 py-12">
+    <h3 class="text-2xl font-semibold mb-4">Skills</h3>
+    <div class="flex flex-wrap gap-2">
+      <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">JavaScript</span>
+      <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">TypeScript</span>
+      <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">React.js</span>
+      <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Node.js</span>
+      <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Tailwind CSS</span>
+      <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">MongoDB</span>
+      <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">SQL</span>
+      <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">JSP</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="px-6 py-12">
+    <h3 class="text-2xl font-semibold mb-4">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="border p-4 rounded shadow-sm dark:border-gray-700 dark:bg-gray-800">
+        <h4 class="font-semibold">Donation Website</h4>
+        <p class="text-sm">Technologies: JSP, SQL</p>
+        <p class="text-gray-700 dark:text-gray-300 mt-2">Built a web app for donations with login, registration, and menu features.</p>
+      </div>
+      <div class="border p-4 rounded shadow-sm dark:border-gray-700 dark:bg-gray-800">
+        <h4 class="font-semibold">Flood Impact Analysis System</h4>
+        <p class="text-sm">Technologies: React.js, Twilio API, Node.js</p>
+        <p class="text-gray-700 dark:text-gray-300 mt-2">Real-time flood alerts via SMS/email using Twilio with user dashboard.</p>
+      </div>
+      <div class="border p-4 rounded shadow-sm dark:border-gray-700 dark:bg-gray-800">
+        <h4 class="font-semibold">Social Media Platform</h4>
+        <p class="text-sm">Technologies: MERN, Firebase</p>
+        <p class="text-gray-700 dark:text-gray-300 mt-2">Includes registration, JWT auth, post sharing, and Firebase media uploads.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-100 dark:bg-gray-800 px-6 py-12">
+    <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+    <p class="mb-2">📧 <a href="mailto:shanmukhshyam7569@gmail.com" class="text-blue-600">shanmukhshyam7569@gmail.com</a></p>
+    <p class="mb-2">📱 9347748198</p>
+    <p class="mb-2">🔗 <a href="https://linkedin.com/in/shanmukh-s-768b691b2" class="text-blue-600">LinkedIn Profile</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t text-sm dark:border-gray-700">
+    © 2025 Gunduboina Shanmukha Syam. All rights reserved.
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+
+</body>
+</html>
